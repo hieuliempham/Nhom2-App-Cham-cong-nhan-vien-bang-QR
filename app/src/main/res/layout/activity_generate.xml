@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.03"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.15"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/generateBtnTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.20"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/generateBtnBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.30"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/QRTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.33"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/QRBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.83"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/downloadTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.86"
+        android:orientation="horizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/downloadBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.96"
+        android:orientation="horizontal"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBottom"
+        app:layout_constraintStart_toStartOf="@+id/leftLine"
+        app:layout_constraintEnd_toEndOf="@id/rightLine"
+        app:layout_constraintTop_toTopOf="@+id/inputTop"
+        app:endIconMode="clear_text"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:hint="@string/text"
+            android:layout_marginTop="4dp"
+            android:textSize="20sp"
+            android:paddingHorizontal="4dp"
+            android:background="@drawable/roundedinput"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/generateQRBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/generateBtnBottom"
+        app:layout_constraintStart_toStartOf="@+id/leftLine"
+        app:layout_constraintEnd_toEndOf="@id/rightLine"
+        app:layout_constraintTop_toTopOf="@+id/generateBtnTop"
+        android:background="@drawable/custumbotton"
+        android:text="@string/QRgenerate"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/generatedQRImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/QRBottom"
+        app:layout_constraintStart_toStartOf="@+id/leftLine"
+        app:layout_constraintEnd_toEndOf="@id/rightLine"
+        app:layout_constraintTop_toTopOf="@+id/QRTop"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/downloadBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/downloadBottom"
+        app:layout_constraintStart_toStartOf="@+id/leftLine"
+        app:layout_constraintEnd_toEndOf="@id/rightLine"
+        app:layout_constraintTop_toTopOf="@+id/downloadTop"
+        android:background="@drawable/custumbotton"
+        android:text="@string/downlaod"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

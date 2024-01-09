@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Chấm công QR</string>
+
+    <string name="splash_image">Logo</string>
+    <string name="welcome">Welcome</string>
+    <string name="splash_text">Chấm công QR</string>
+    <string name="scan">Quét mã QR</string>
+    <string name="create">Tạo QR</string>
+    <string name="recorded">Lịch sử chấm công</string>
+
+    <string name="text">Nhập mã nhân viên</string>
+    <string name="QRgenerate">Tạo mã QR</string>
+    <string name="downlaod">Tải xuống</string>
+    <string name="export">Xuất file XLS</string>
+    <string name="file_name">Nhập tên file XLS</string>
+</resources>
