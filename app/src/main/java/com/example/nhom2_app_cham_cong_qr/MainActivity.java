@@ -9,6 +9,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.nhom2_app_cham_cong_qr.databinding.ActivityMainBinding;
@@ -61,6 +63,55 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, AttendaceActivity.class);
                 startActivity(i);
+            }
+        });
+        // Cham thu cong
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Tạo dialog
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Nhập mã nhân viên");
+
+                // Tạo ô nhập
+                final EditText input = new EditText(MainActivity.this);
+                builder.setView(input);
+
+                // Xác nhận
+                builder.setPositiveButton("Xác nhận", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // Lấy giá trị từ ô nhập
+                        String employeeCode = input.getText().toString();
+                        // Lưu dữ liệu vào cơ sở dữ liệu
+                        // TODO: Lưu dữ liệu vào cơ sở dữ liệu
+                        String trainee = input.getText().toString();
+                        if (databaseHelper.addText(trainee, date)) {
+                            Toast.makeText(MainActivity.this, "Đã ghi nhận thành công", Toast.LENGTH_LONG).show();
+                        }
+                        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                        builder.setTitle("Mã nhân viên").
+                                setMessage(input.getText()).
+                                setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        dialogInterface.dismiss();
+                                    }
+                                }).
+                                show();
+                    }
+                });
+
+                builder.setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+
+                // Hiển thị dialog
+                builder.show();
             }
         });
     }

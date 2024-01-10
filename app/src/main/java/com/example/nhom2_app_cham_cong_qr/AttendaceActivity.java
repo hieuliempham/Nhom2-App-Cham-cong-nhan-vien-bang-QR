@@ -34,7 +34,7 @@ public class AttendaceActivity extends AppCompatActivity {
     private static final String SHEET_NAME = "Sheet1";
     private static final String NAME_COL_HEADER = "Tên/Mã NV";
     private static final String DATE_COL_HEADER = "Ngày chấm công";
-    private static final String CONCAT_COL_HEADER = "nội dung";
+    private static final String CONCAT_COL_HEADER = "Nội dung";
     private static final String FILE_NAME = "attendance.xls";
     HSSFWorkbook workbook;
     HSSFSheet sheet;
