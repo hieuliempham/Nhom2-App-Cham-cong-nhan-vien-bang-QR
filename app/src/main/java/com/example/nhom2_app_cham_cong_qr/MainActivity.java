@@ -65,7 +65,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
         // Cham thu cong
+
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.show();
             }
         });
+
     }
 
     @Override

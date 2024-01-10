@@ -68,17 +68,25 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="@+id/verticalLeft"
         app:layout_constraintTop_toTopOf="@+id/imageTop"
-        app:layout_constraintVertical_bias="0.0"/>
+
+        app:layout_constraintVertical_bias="0.0" />
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/scanBtn" android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/custumbotton"
-        android:text="@string/scan" android:textAllCaps="false"
-        android:textColor="@color/white" android:textSize="24sp"
+
+        android:text="@string/scan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/bottonOneBottom"
         app:layout_constraintEnd_toEndOf="@+id/verticalRight"
         app:layout_constraintStart_toStartOf="@+id/verticalLeft"
-        app:layout_constraintTop_toTopOf="@+id/bottonOneTop"/>
+        app:layout_constraintTop_toTopOf="@+id/bottonOneTop" />
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/createBtn"
         android:layout_width="0dp"
@@ -91,7 +99,10 @@
         app:layout_constraintBottom_toBottomOf="@+id/bottonTwoBottom"
         app:layout_constraintEnd_toEndOf="@+id/verticalRight"
         app:layout_constraintStart_toStartOf="@+id/verticalLeft"
-        app:layout_constraintTop_toTopOf="@+id/bottonTwoTop"/>
+
+        app:layout_constraintTop_toTopOf="@+id/bottonTwoTop" />
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/recordedBtn"
         android:layout_width="0dp"
@@ -104,7 +115,10 @@
         app:layout_constraintBottom_toBottomOf="@+id/bottonThreeBottom"
         app:layout_constraintEnd_toEndOf="@+id/verticalRight"
         app:layout_constraintStart_toStartOf="@+id/verticalLeft"
-        app:layout_constraintTop_toTopOf="@+id/bottonThreeTop"/>
+
+        app:layout_constraintTop_toTopOf="@+id/bottonThreeTop" />
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="431dp"
@@ -116,5 +130,8 @@
         app:layout_constraintBottom_toTopOf="@+id/imageBottom"
         app:layout_constraintEnd_toStartOf="@+id/verticalRight"
         app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/verticalLeft"/>
+
+        app:layout_constraintStart_toStartOf="@+id/verticalLeft" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

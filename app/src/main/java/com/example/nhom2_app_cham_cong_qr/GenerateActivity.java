@@ -59,7 +59,7 @@ public class GenerateActivity extends AppCompatActivity {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 saveImage();
             } else {
-                Toast.makeText(GenerateActivity.this, "Hãy cung cấp đầy đủ quyền truy cập06", Toast.LENGTH_LONG).show();
+                Toast.makeText(GenerateActivity.this, "Hãy cung cấp đầy đủ quyền truy cập", Toast.LENGTH_LONG).show();
             }
         }
 
