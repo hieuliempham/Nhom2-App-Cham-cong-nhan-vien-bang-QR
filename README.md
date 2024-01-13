@@ -4,14 +4,14 @@
 # Tính Năng
 ### Chấm Công Nhân Viên
 * Khởi động ứng dụng trên thiết bị Android.
-![Loading screen](https://drive.google.com/file/d/13lBQQur1Rr6HGR4slHntQifP9iCXUKRM/view?usp=drive_link)
+![Loading screen](https://drive.google.com/file/d/13lBQQur1Rr6HGR4slHntQifP9iCXUKRM/view?usp=sharing)
 
 * Có 2 cách để chấm công: Quét mã QR và chấm công bằng cách nhập mã
-![Main menu](https://drive.google.com/file/d/1vqi_p0IZ3ua5ltOjX5dWyB94HCR_qEqg/view?usp=drive_link)
+![Main menu](https://drive.google.com/file/d/1vqi_p0IZ3ua5ltOjX5dWyB94HCR_qEqg/view?usp=sharing)
 
 * Danh Sách Nhân Viên: Hiển thị danh sách nhân viên trong hộp chọn dạng danh sách.
 
-![Danh sách nhân viên](https://drive.google.com/file/d/1A0vP77lNxuNBJyBqjeVhNEU8hFtBqnJL/view?usp=drive_link)
+![Danh sách nhân viên](https://drive.google.com/file/d/1A0vP77lNxuNBJyBqjeVhNEU8hFtBqnJL/view?usp=sharing)
 
 ### Xuất Dữ Liệu Chấm Công Ra File Excel
 
@@ -22,7 +22,7 @@
 * Nhập Tên File Excel: Một hộp thoại sẽ xuất hiện, yêu cầu bạn nhập tên cho file Excel sẽ được lưu. Điều này giúp bạn có thể xác định dễ dàng nội dung của file sau này.
 
 * Xuất Excel Thành Công: Sau khi nhập tên và nhấn "OK," ứng dụng sẽ tạo một file Excel chứa thông tin chi tiết về chấm công của nhân viên.
-![Export Excel](https://drive.google.com/file/d/1shUX4cM7BuZUmMMfQNuJQL5TE4bwPfm2/view?usp=drive_link)
+![Export Excel](https://drive.google.com/file/d/1shUX4cM7BuZUmMMfQNuJQL5TE4bwPfm2/view?usp=sharing)
 
 ### Ghi Chú:
 * Mỗi lần quét chấm công, một mức lương cơ bản sẽ được thêm vào dữ liệu để tính tổng lương.
